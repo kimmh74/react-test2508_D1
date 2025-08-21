@@ -7,7 +7,7 @@ const Slide = () => {
   const slides = [
     {
       id: 1,
-      image: '/img1.jpg',
+      image: './img1.jpg',
       title: '프리미엄 골프 경험',
       subtitle: '최고의 그린에서 특별한 순간을',
       description: '전문적인 골프 코스와 최상의 서비스로 잊을 수 없는 골프 경험을 제공합니다.',
@@ -15,7 +15,7 @@ const Slide = () => {
     },
     {
       id: 2,
-      image: '/img2.jpg',
+      image: './img2.jpg',
       title: '자연과 함께하는 골프',
       subtitle: '아름다운 풍경 속에서',
       description: '도시를 벗어나 자연 속에서 마음껏 골프를 즐겨보세요.',
@@ -23,7 +23,7 @@ const Slide = () => {
     },
     {
       id: 3,
-      image: '/img3.jpg',
+      image: './img3.jpg',
       title: '전문 골프 레슨',
       subtitle: '체계적인 교육 시스템',
       description: '초보자부터 고급자까지, 개인 맞춤형 골프 레슨을 제공합니다.',
@@ -31,7 +31,7 @@ const Slide = () => {
     },
     {
       id: 4,
-      image: '/img4.jpg',
+      image: './img4.jpg',
       title: '골프 패키지 상품',
       subtitle: '합리적인 가격으로',
       description: '골프장 이용부터 장비 렌탈까지, 모든 것을 한 번에 해결하세요.',
