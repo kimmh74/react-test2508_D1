@@ -1,0 +1,77 @@
+.main-nav.is-open {
+  display: block; /* is-open 클래스가 있을 때 메뉴를 보여줌 */
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column; /* 모바일에서는 메뉴를 세로로 나열 */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.submenu-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+.submenu-item {
+  padding: 10px;
+  text-align: left;
+}
+
+.hamburger-menu {
+  display: block; /* 모바일에서만 보임 */
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* --- 데스크톱 스타일 --- */
+/* 화면 너비가 768px 이상일 때 적용 */
+@media (min-width: 768px) {
+  .header-container {
+    justify-content: space-between; /* 로고와 메뉴를 양쪽으로 정렬 */
+  }
+
+  .main-nav {
+    display: block; /* 데스크톱에서는 메뉴를 항상 보이게 */
+    position: static; /* position 속성 초기화 */
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .menu-list {
+    flex-direction: row; /* 메뉴를 가로로 나열 */
+  }
+
+  .menu-item {
+    border-bottom: none;
+    padding: 0 15px;
+  }
+
+  .submenu-list {
+    position: absolute;
+    /* 데스크톱에서는 서브메뉴를 드롭다운으로 표시 */
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .hamburger-menu {
+    display: none; /* 데스크톱에서는 햄버거 메뉴 숨김 */
+  }
+}
