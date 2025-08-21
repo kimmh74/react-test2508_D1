@@ -24,11 +24,18 @@
 }
 
 .logo h1 {
-  font-size: 20px;
-  /* font-weight: bold; */
-  color: #333;
+  font-size: 28px;
+  font-weight: 900;
   margin: 0;
+  letter-spacing: 0.6px;
   font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #5465ca, #f37208);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 8px rgba(84, 101, 202, 0.28),
+               0 8px 20px rgba(0, 0, 0, 0.18),
+               0 0 2px rgba(243, 114, 8, 0.35);
 }
 
 /* 메인 네비게이션 */
@@ -52,18 +59,22 @@
 }
 
 .menu-link {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
   color: #333;
   padding: 15px 20px;
   display: block;
-  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+  transition: all 0.25s ease;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.02);
 }
 
 .menu-link:hover {
-  background: #f8f9fa;
-  color: #007bff;
+  background: linear-gradient(90deg, rgba(84,101,202,0.08), rgba(243,114,8,0.08));
+  color: #5465ca;
   padding-left: 25px;
+  transform: translateX(4px);
+  border-radius: 10px;
 }
 
 /* 서브메뉴 스타일 */
@@ -103,6 +114,17 @@
 
 /* 반응형 디자인 */
 @media (max-width: 768px) {
+  .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    z-index: 1000;
+  }
+
   .header .header-container{
     width: 100%;
     height: auto;
@@ -111,25 +133,39 @@
   
   .header-container {
     padding: 10px;
-    /* text-align: center; */
     position: relative;
   }
   
   .logo {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    text-align: center;
   }
   
   .menu-list {
-    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
   }
   
   .menu-item {
     border-bottom: none;
     border: 1px solid #e9ecef;
-    border-radius: 5px;
-    margin-bottom: 5px;
+    border-radius: 18px;
   }
   
+  .menu-link {
+    padding: 10px 14px;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .menu-link:hover {
+    padding-left: 14px;
+    transform: none;
+  }
+
   .submenu-list {
     background: #ffffff;
     border-top: 1px solid #e9ecef;

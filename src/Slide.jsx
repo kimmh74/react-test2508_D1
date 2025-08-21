@@ -106,7 +106,7 @@ const Slide = () => {
       </div>
 
       {/* 광고 메시지 배너 */}
-      <div className="ad-banner" onClick={onclose}>
+      <div className="ad-banner">
         <div className="ad-content">
           <div className="ad-icon">🏌️</div>
           <div className="ad-text">

@@ -1,20 +1,18 @@
 import './App.css'
 import Footer from './Footer'
-import Header from './header'
+import Header from './Header'
 import Slide from './Slide'
+import Section from './Section'
+import Popup from './Popup'
 
 function App() {
   return (
     <div className="app">
       <Header />
-      <main className="main-content">
-        <Slide />
-        <section className="content-section">
-          <div className="container">
-          </div>
-        </section>
-      </main>
+      <Slide />
+      <Section />
       <Footer />
+      <Popup />
     </div>
   )
 }
