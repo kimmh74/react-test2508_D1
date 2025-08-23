@@ -89,6 +89,7 @@ function Popup() {
                   <li>주중/주말 모두 이용 가능</li>
                   <li>이벤트 주간 그린피 1+1 프로모션</li>
                   <li>2인 이상 동반 라운딩 추가 할인</li>
+                  <li>3대가족 Family할인 50% 이벤트</li>
                 </ul>
 
                 <div className="special-sections">
